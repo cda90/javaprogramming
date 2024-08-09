@@ -86,18 +86,6 @@ public class Palindrome {
 			//System.out.format("The entered word / phrase is %s %n", response(reverse(input)));
 			//System.out.format("The entered word / phrase is %s %n", response(isPalindrome(input)));
 			System.out.format("The entered word / phrase is %s %n", response(isPalindrome_using_two_pointers(input)));
-			
-			/**
-			 * Palindrome Test strings :
-			 * madam
-			 * nurses run
-			 * A man, a plan, a canal: Panama
-			 * 767
-			 *
-			 * Not palindrom test strings :
-			 * victory
-			 * 769
-			 */
 		}
 		
 		
