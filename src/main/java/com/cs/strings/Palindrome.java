@@ -15,6 +15,19 @@ public class Palindrome {
 		return val ? "a Palindrome" : "NOT a Palindrome";
 	}
 	
+	
+	static boolean isPalindrome_simple(String line){
+		String textOnly = line.replaceAll("[^a-zA-Z0-9]","").toLowerCase();
+		
+		int N = textOnly.length();
+		for(int i=0 ; i<N/2; i++){
+			if(textOnly.charAt(i) != textOnly.charAt(N-1-i)) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
 	static boolean isPalindrome_using_two_pointers(String line){
 		String textOnly = line.replaceAll("[^a-zA-Z0-9]","").toLowerCase();
 		
@@ -85,7 +98,9 @@ public class Palindrome {
 			//System.out.format("The entered word / phrase is %s %n", response(bruteForce(input)));
 			//System.out.format("The entered word / phrase is %s %n", response(reverse(input)));
 			//System.out.format("The entered word / phrase is %s %n", response(isPalindrome(input)));
-			System.out.format("The entered word / phrase is %s %n", response(isPalindrome_using_two_pointers(input)));
+//			System.out.format("The entered word / phrase is %s %n", response(isPalindrome_using_two_pointers(input)));
+			System.out.format("The entered word / phrase is %s %n", response(isPalindrome_simple(input)));
+			
 		}
 		
 		
