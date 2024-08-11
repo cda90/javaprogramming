@@ -1,4 +1,4 @@
-package com.cs.strings.numbers;
+package com.cs.numbers;
 
 import java.util.Scanner;
 
