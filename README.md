@@ -6,3 +6,5 @@
 6) Array Strings sorting --> com.cs.arrays.ArrayStringSort
 7) Search Array --> com.cs.arrays.SearchArray
 8) Fibonacci --> com.cs.numbers.Fibonaci
+9) String ordering --> com.cs.strings.StringOrdering 
+(ordering logic : first, last, second, second-to-last, ..., preserve middle if present)
